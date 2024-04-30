@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request #flask import
+from random import randrange
 import mariadb
 import sys
 
@@ -20,8 +21,8 @@ app = Flask(__name__) # to initiate this for web app
 
 @app.route("/")
 def index():
-    rows = db.execute("SELECT * FROM hellos;")
+    db.execute("SELECT * FROM hellos;")
     rows = db.fetchall()
+    randindex = randrange(len(rows))
 
-    print(f"show DBs : {rows}")
-    return render_template("index.html", status = rows[1]['message'])
+    return render_template("index.html", status = rows[randindex]['message'])
