@@ -5,11 +5,11 @@ import sys
 
 try:
     conn = mariadb.connect(
-        user="andre",
-        password="password",
-        host="localhost",
+        user="d3xj7d753lhx14ad",
+        password="qyjau9ud4manbl1w",
+        host="z12itfj4c1vgopf8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         port=3306,
-        database="helloDB"
+        database="nodabg0vdbkgxoop"
     )
 except mariadb.Error as e:
     print(f"Error connecting to MariaDB platform: {e}")
