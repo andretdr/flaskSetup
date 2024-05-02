@@ -1,7 +1,4 @@
 Flask==2.2.2
 gunicorn==22.0.0
 Werkzeug==2.3.7
-psycopg2
-libmariadb==3.1.16
-mariadb==10.5.15
-random
+mysql
